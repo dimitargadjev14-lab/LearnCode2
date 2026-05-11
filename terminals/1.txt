@@ -1,0 +1,6 @@
+---
+pid: 22588
+cwd: |
+  C:\Users\Mtko
+---
+PS C:\Users\Mtko>

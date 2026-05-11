@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
   --bg: #050b17;
   --panel: #0f1b33;
@@ -246,3 +247,253 @@ body {
   padding: 0.35rem 0.65rem;
   cursor: pointer;
 }
+=======
+:root {
+  --bg: #050b17;
+  --panel: #0f1b33;
+  --panel-2: #0b1530;
+  --text: #e6eefc;
+  --accent: #25d0ff;
+  --accent-rgb: 37, 208, 255;
+}
+
+body.theme-green {
+  --accent: #22ff88;
+  --accent-rgb: 34, 255, 136;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sandbox-page {
+  min-height: 100vh;
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 0.8rem;
+}
+
+.sandbox-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+}
+
+.sandbox-header h1 {
+  margin: 0.15rem 0 0;
+  color: var(--accent);
+  text-shadow: 0 0 10px rgba(var(--accent-rgb), 0.35);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.theme-toggle,
+.back-link {
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  border-radius: 8px;
+  padding: 0.4rem 0.7rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sandbox-editor-panel {
+  background: var(--panel);
+  border: 1px solid rgba(var(--accent-rgb), 0.35);
+  border-radius: 12px;
+  box-shadow: 0 0 14px rgba(var(--accent-rgb), 0.14);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.editor-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(var(--accent-rgb), 0.35);
+  padding: 0.55rem 0.75rem;
+}
+
+.editor-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.editor-switcher {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.editor-side-btn {
+  border: 1px solid rgba(var(--accent-rgb), 0.45);
+  background: rgba(var(--accent-rgb), 0.08);
+  color: #c6eaff;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  padding: 0.15rem 0.5rem;
+  cursor: pointer;
+}
+
+.editor-side-btn.active {
+  color: #04111c;
+  background: var(--accent);
+  box-shadow: 0 0 8px rgba(var(--accent-rgb), 0.45);
+}
+
+.editor-actions {
+  display: flex;
+  gap: 0.45rem;
+}
+
+.ghost-btn,
+.run-btn {
+  border-radius: 6px;
+  border: 1px solid #2d4b7d;
+  font-size: 0.76rem;
+  padding: 0.28rem 0.58rem;
+  color: #d7e8ff;
+  background: #102342;
+  cursor: pointer;
+}
+
+.run-btn {
+  background: #12c55a;
+  border-color: #16a34a;
+  color: #08210f;
+  font-weight: 700;
+}
+
+.editor-area {
+  padding: 0.95rem;
+  background: var(--panel-2);
+  border: 0;
+  resize: none;
+  width: 100%;
+  height: 100%;
+  color: #d5e5ff;
+  outline: none;
+  font-family: Consolas, "Courier New", monospace;
+  line-height: 1.55;
+  font-size: 0.9rem;
+}
+
+.status-line {
+  margin: 0;
+  padding: 0.6rem 0.8rem;
+  border-top: 1px solid rgba(var(--accent-rgb), 0.25);
+  color: #9ab6df;
+}
+
+.context-menu {
+  position: fixed;
+  display: none;
+  min-width: 170px;
+  background: #0d1a33;
+  border: 1px solid rgba(var(--accent-rgb), 0.5);
+  border-radius: 8px;
+  padding: 0.35rem;
+  z-index: 30;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+
+.context-menu.visible {
+  display: grid;
+}
+
+.context-menu button {
+  text-align: left;
+  border: 0;
+  background: transparent;
+  color: #d8ebff;
+  border-radius: 6px;
+  padding: 0.45rem 0.55rem;
+  cursor: pointer;
+}
+
+.context-menu button:hover {
+  background: rgba(var(--accent-rgb), 0.16);
+}
+
+.file-dialog {
+  border: 1px solid rgba(var(--accent-rgb), 0.55);
+  border-radius: 10px;
+  background: #0b1730;
+  color: #d6ecff;
+  width: min(420px, 92vw);
+}
+
+.file-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.file-dialog form {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.file-dialog p {
+  margin: 0;
+  color: #b8cdea;
+}
+
+.file-dialog h3 {
+  margin: 0;
+  color: var(--accent);
+}
+
+.file-dialog label {
+  display: grid;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.file-dialog input,
+.file-dialog select {
+  background: #091327;
+  border: 1px solid rgba(var(--accent-rgb), 0.4);
+  color: #d6ecff;
+  border-radius: 6px;
+  padding: 0.45rem 0.55rem;
+}
+
+.file-dialog menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.file-dialog menu button {
+  border: 1px solid rgba(var(--accent-rgb), 0.45);
+  border-radius: 6px;
+  color: var(--accent);
+  background: transparent;
+  padding: 0.35rem 0.65rem;
+  cursor: pointer;
+}
+>>>>>>> 2807f38 (Git start)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,3 +78,84 @@
   </dialog>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon Code Academy - Sandbox</title>
+  <link rel="stylesheet" href="sandbox.css">
+  <script src="theme.js" defer></script>
+  <script src="sandbox.js" defer></script>
+</head>
+<body>
+  <main class="sandbox-page">
+    <header class="sandbox-header">
+      <div>
+        <p class="eyebrow">Practice Task</p>
+        <h1>Sandbox Coding</h1>
+      </div>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle>Switch to Green Neon</button>
+        <a class="back-link" href="index.html">Back Home</a>
+      </div>
+    </header>
+
+    <section class="sandbox-editor-panel">
+      <div class="editor-top">
+        <div class="editor-title-wrap">
+          <strong id="sandbox-editor-label">Your HTML</strong>
+          <div class="editor-switcher active" id="sandbox-switcher"></div>
+        </div>
+        <div class="editor-actions">
+          <button type="button" class="ghost-btn" id="sandbox-reset-btn">Reset</button>
+          <button type="button" class="run-btn" id="sandbox-run-btn">Run</button>
+        </div>
+      </div>
+      <textarea id="sandbox-editor" class="editor-area" spellcheck="false"></textarea>
+      <p class="status-line" id="sandbox-status">Write code, switch sides with bullets, then press Run.</p>
+    </section>
+  </main>
+
+  <div class="context-menu" id="sandbox-context-menu">
+    <button type="button" data-action="rename">Change name</button>
+    <button type="button" data-action="new-file">Create new file</button>
+    <button type="button" data-action="delete-file">Delete file</button>
+  </div>
+
+  <dialog id="sandbox-file-dialog" class="file-dialog">
+    <form method="dialog" id="sandbox-file-form">
+      <h3 id="dialog-title">Create file</h3>
+      <label>
+        File name
+        <input type="text" id="dialog-file-name" required>
+      </label>
+      <label id="dialog-ext-wrap">
+        Extension
+        <select id="dialog-file-type">
+          <option value="html">.html</option>
+          <option value="css">.css</option>
+          <option value="js">.js</option>
+        </select>
+      </label>
+      <menu>
+        <button type="button" id="dialog-cancel-btn">Cancel</button>
+        <button type="submit" id="dialog-submit-btn">Save</button>
+      </menu>
+    </form>
+  </dialog>
+
+  <dialog id="sandbox-delete-dialog" class="file-dialog">
+    <form method="dialog" id="sandbox-delete-form">
+      <h3>Delete file</h3>
+      <p id="delete-dialog-text">Are you sure you want to delete this file?</p>
+      <menu>
+        <button type="button" id="delete-cancel-btn">Cancel</button>
+        <button type="submit" id="delete-accept-btn">Accept</button>
+      </menu>
+    </form>
+  </dialog>
+</body>
+</html>
+>>>>>>> 2807f38 (Git start)

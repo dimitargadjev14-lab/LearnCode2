@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
   <head>
@@ -160,3 +161,167 @@
     </div>
   </body>
 </html>
+=======
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A dark neon coding learning homepage with HTML, CSS, and JavaScript lessons."
+    />
+    <title>Neon Code Academy</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="theme.js" defer></script>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="app-layout">
+      <aside class="sidebar">
+        <h1 class="brand">Neon Code Academy</h1>
+        <p class="sidebar-subtitle">Choose a track and start learning.</p>
+        <button class="theme-toggle" type="button" data-theme-toggle>
+          Switch to Green Neon
+        </button>
+        <nav class="track-list">
+          <a class="track-card active" href="#" data-track="html">
+            <span class="track-title">HTML Lessons</span>
+            <span class="track-count">20 lessons</span>
+          </a>
+          <a class="track-card" href="#" data-track="css">
+            <span class="track-title">CSS Lessons</span>
+            <span class="track-count">20 lessons</span>
+          </a>
+          <a class="track-card" href="#" data-track="js">
+            <span class="track-title">JavaScript Lessons</span>
+            <span class="track-count">25 lessons</span>
+          </a>
+        </nav>
+        <a
+          class="primary-btn start-link"
+          id="start-learning-link"
+          href="learning.html?track=html"
+          >Start Learning</a
+        >
+      </aside>
+
+      <main class="content">
+        <header class="hero">
+          <h2>Build. Style. Interact.</h2>
+          <p>
+            Follow the roadmap below and complete mini tasks after every
+            section.
+          </p>
+          <div class="hero-actions">
+            <button class="primary-btn" type="button">Start Lesson</button>
+            <a class="secondary-btn action-link" href="sandbox.html"
+              >Sandbox IDE</a
+            >
+          </div>
+        </header>
+
+        <section id="html-lessons" class="lesson-section">
+          <h3>HTML Lessons (20)</h3>
+          <p class="goal">
+            <strong>Goal:</strong> Build structure of a webpage
+          </p>
+          <ol>
+            <li>What is HTML</li>
+            <li>Basic structure (<code>&lt;!DOCTYPE html&gt;</code>)</li>
+            <li>Head vs Body</li>
+            <li>Headings (<code>h1</code>-<code>h6</code>)</li>
+            <li>Paragraphs (<code>p</code>)</li>
+            <li>Links (<code>a</code>)</li>
+            <li>Images (<code>img</code>)</li>
+            <li>Lists (<code>ul</code>, <code>ol</code>, <code>li</code>)</li>
+            <li>Div vs Span</li>
+            <li>Buttons</li>
+            <li>Input fields</li>
+            <li>Forms basics</li>
+            <li>Labels</li>
+            <li>Tables</li>
+            <li>
+              Semantic tags (<code>header</code>, <code>main</code>,
+              <code>footer</code>)
+            </li>
+            <li>Navigation (<code>nav</code>)</li>
+            <li>Sections (<code>section</code>, <code>article</code>)</li>
+            <li>Iframes</li>
+            <li>Meta tags</li>
+            <li>Accessibility basics</li>
+          </ol>
+          <p class="task">
+            <strong>Example task:</strong> Create a simple profile page
+          </p>
+        </section>
+
+        <section id="css-lessons" class="lesson-section">
+          <h3>CSS Lessons (20)</h3>
+          <p class="goal"><strong>Goal:</strong> Make it look good</p>
+          <ol>
+            <li>What is CSS</li>
+            <li>Selectors (class, id)</li>
+            <li>Colors</li>
+            <li>Backgrounds</li>
+            <li>Text styling</li>
+            <li>Fonts</li>
+            <li>Box model</li>
+            <li>Margin vs Padding</li>
+            <li>Borders</li>
+            <li>Display (<code>block</code>, <code>inline</code>)</li>
+            <li>Flexbox basics</li>
+            <li>Flexbox alignment</li>
+            <li>Grid basics</li>
+            <li>Width &amp; height</li>
+            <li>Position (<code>relative</code>, <code>absolute</code>)</li>
+            <li>Z-index</li>
+            <li>Hover effects</li>
+            <li>Transitions</li>
+            <li>Animations</li>
+            <li>Responsive design</li>
+          </ol>
+          <p class="task">
+            <strong>Example task:</strong> Style a card (like an Instagram post)
+          </p>
+        </section>
+
+        <section id="js-lessons" class="lesson-section">
+          <h3>JavaScript Lessons (25)</h3>
+          <p class="goal"><strong>Goal:</strong> Make things interactive</p>
+          <ol>
+            <li>What is JavaScript</li>
+            <li>Variables (<code>let</code>, <code>const</code>)</li>
+            <li>Data types</li>
+            <li>Operators</li>
+            <li>Functions</li>
+            <li>If statements</li>
+            <li>Comparison operators</li>
+            <li>Loops (<code>for</code>, <code>while</code>)</li>
+            <li>Arrays</li>
+            <li>Objects</li>
+            <li>Events (<code>click</code>)</li>
+            <li>DOM basics</li>
+            <li><code>querySelector</code></li>
+            <li>Changing text</li>
+            <li>Changing styles</li>
+            <li>Input values</li>
+            <li>Alerts</li>
+            <li><code>setTimeout</code></li>
+            <li><code>setInterval</code></li>
+            <li>Math functions</li>
+            <li>String methods</li>
+            <li>Array methods</li>
+            <li>LocalStorage</li>
+            <li>Try/Catch (errors)</li>
+            <li>Simple project (to-do app)</li>
+          </ol>
+          <p class="task">
+            <strong>Example task:</strong> Make a button that changes text
+          </p>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
+>>>>>>> 2807f38 (Git start)
